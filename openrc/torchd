@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+name="torchd"
+description="Torch control daemon for Nokia N900"
+command="/usr/local/bin/torchd"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+output_log="/var/log/${RC_SVCNAME}.log"
+error_log="/var/log/${RC_SVCNAME}.err"
+
